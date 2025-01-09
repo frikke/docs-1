@@ -1,73 +1,22 @@
-![Banner](/static/banner.png)
+# Hoppscotch Documentation
 
-# Docs
+## Local Development
 
-[Hoppscotch](https://www.hoppscotch.io)
-
-[Documentation](https://docs.hoppscotch.io)
-
-## Setup
+> [!IMPORTANT]
+> Please install Node.js (version 19 or higher) before proceeding.
 
 Install dependencies:
 
 ```bash
-npm run install
+npm i -g mintlify
 ```
 
-## Development
+Start development server with:
 
 ```bash
-npm run dev
+mintlify dev
 ```
 
-## Static Generation
+A local preview of your documentation will be available at `http://localhost:3000`.
 
-This will create the `dist/` directory for publishing to static hosting:
-
-```bash
-npm run generate
-```
-
-To preview the static generated app, run `npm run start`
-
-## Contributors Guide
-
-We are looking for translators to help us with translations of Docs. [docs.hoppscotch](https://docs.hoppscotch.io) is built with nuxt-content.
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/v1/examples/docs-theme).
-
-### Steps
-
-1. Follow the Setup Guide
-2. To add your language to the dropdown menu, go to `nuxt.config.js`, add code,iso,file and name of the language.
-
-   ```bash
-       {
-           code: 'fr',
-           iso: 'fr-FR',
-           file: 'fr-FR.js',
-           name: 'Français'
-           }
-   ```
-
-3. To add translated content, navigate to `\content`, add a folder with language code as the name and add `.md` files.
-   ```bash
-      content
-      |
-      |- en
-      |  |- article.md
-      |- fr
-          |-article.md <----translated
-   ```
-4. Make sure that the file names for translated content are the same as that of the english document.
-5. Add screenshots to `\static\Resources\<your lang>\` or re-use screenshots of the english version.
-
-[nuxt-shield]: https://img.shields.io/badge/nuxt.js-00C58E?style=flat-sqaure&logo=nuxtdotjs&logoColor=white
-[tailwind-shield]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white
-[forks-shield]: https://img.shields.io/github/forks/hoppscotch/docs?style=flat-square
-[forks-url]: https://github.com/hoppscotch/docs/network/members
-[stars-shield]: https://img.shields.io/github/stars/hoppscotch/docs?style=flat-square
-[stars-url]: https://github.com/hoppscotch/docs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/hoppscotch/docs?style=flat-square
-[issues-url]: https://github.com/hoppscotch/docs/issues
-[license-shield]: https://img.shields.io/github/license/hoppscotch/docs?style=flat-square
-[license-url]: https://github.com/hoppscotch/docs/blob/main/LICENSE
+Read more about [Mintlify](https://mintlify.com/docs/development) to customize your documentation.

@@ -1,0 +1,67 @@
+---
+sidebarTitle: Running a simple query
+title: Running a simple query
+description: Learn how to run a simple query using Hoppscotch.
+---
+
+## Connecting to a GraphQL server
+
+Switch to the GraphQL platform on Hoppscotch and connect to the below GraphQL server.
+
+```
+https://echo.hoppscotch.io/graphql
+```
+
+Once a successful connection has been made, you can view both **documentation** and the **schema** using Hoppscotch.
+
+It is important to explore the schema to understand the different **queries, mutations, types, and subscriptions** that are offered by the endpoint.
+
+## Running the query
+
+Furthermore, you can run the query to fetch the data from the GraphQL server.
+
+## Countries GraphQL endpoint
+
+Let's explore the Naruto GraphQL endpoint.
+
+1. Open Hoppscotch, switch to the GraphQL client and connect to the endpoint below:
+
+    ```
+    https://countries.trevorblades.com/graphql
+    ```
+
+2. Explore the schema and documentation to understand more about the endpoint.
+3. Write a query to filter the `countries` collection where the `name` field is equal to **"Germany"**.
+
+    ```graphql
+    {
+      countries (filter: {name: {eq: "Germany"}}) {
+        name
+        code
+        capital
+        emoji
+        currencies
+      }
+    }
+    ```
+
+4. Click on the run button to execute the query.
+5. The query will return the following response.
+
+    ```json
+    {
+      "data": {
+        "countries": [
+          {
+            "name": "Germany",
+            "code": "DE",
+            "capital": "Berlin",
+            "emoji": "🇩🇪",
+            "currencies": [
+              "EUR"
+            ]
+          }
+        ]
+      }
+    }
+    ```
