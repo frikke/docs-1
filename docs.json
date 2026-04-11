@@ -66,8 +66,20 @@
           {
             "group": "Clients",
             "pages": [
-              "documentation/clients/web",
-              "documentation/clients/desktop",
+              {
+                "group": "Desktop",
+                "pages": [
+                  "documentation/clients/desktop/overview",
+                  "documentation/clients/desktop/setup"
+                ]
+              },
+              {
+                "group": "Web",
+                "pages": [
+                  "documentation/clients/web/overview",
+                  "documentation/clients/web/pwa"
+                ]
+              },
               {
                 "group": "CLI",
                 "pages": [

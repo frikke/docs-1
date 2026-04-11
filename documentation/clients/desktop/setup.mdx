@@ -1,0 +1,80 @@
+---
+sidebarTitle: Setup
+title: Connect to Hoppscotch
+description: Connect the Hoppscotch Desktop App to Hoppscotch Cloud, organization instances, or self-hosted editions.
+---
+
+## Hoppscotch Cloud Edition for Individuals
+
+Seamlessly access Hoppscotch Cloud Edition from Hoppscotch Desktop App:
+
+1. Open Hoppscotch Desktop App.
+2. Click the Hoppscotch logo in the top-left corner.
+3. Click "**HOPPSCOTCH CLOUD**".
+4. Sign in with your Hoppscotch Cloud account to access your workspaces and collections.
+
+## Hoppscotch Cloud Edition for Organizations
+
+Add your Hoppscotch Organization instance to Hoppscotch Desktop App:
+
+1. Open Hoppscotch Desktop App.
+2. Click the Hoppscotch logo in the top-left corner.
+3. Click "**Add instance**".
+4. Provide your instance URL.
+5. Sign in with your organization's Hoppscotch Cloud account to access your workspaces and collections.
+
+## Hoppscotch Self-Hosted Edition for Community
+
+<Warning>
+  To enable desktop app support for your self-hosted Hoppscotch instance, make sure to update the `WHITELISTED_ORIGINS` environment variable in your `.env` file with your deployment URL.
+</Warning>
+<Note>
+  e.g. to allow connection to `https://hoppscotch.my-domain.com` you need to add `app://hoppscotch_my_domain_com` and `http://app.hoppscotch_my_domain_com` to the `WHITELISTED_ORIGINS` environment variable.
+  ```bash
+  WHITELISTED_ORIGINS=...existing_origins,app://hoppscotch_my_domain_com,http://app.hoppscotch_my_domain_com
+  ```
+  <Tip>
+    _app://hoppscotch_my_domain_com_ &nbsp; for Linux and macOS machines.
+  </Tip>
+  <Tip>
+    _http://app.hoppscotch_my_domain_com_ &nbsp; for Windows machine.
+  </Tip>
+</Note>
+
+Add your self-hosted Hoppscotch Community Edition instance to Hoppscotch Desktop App:
+
+1. Open Hoppscotch Desktop App.
+2. Click the Hoppscotch logo in the top-left corner.
+3. Click "**Add an instance**".
+4. Enter the URL of your self-hosted Hoppscotch instance.
+5. Click "**Connect**".
+
+<Tip>You can also self-host Hoppscotch Desktop App. Follow the instructions in the [Hoppscotch GitHub repository](https://github.com/hoppscotch/hoppscotch/tree/main/packages/hoppscotch-desktop).</Tip>
+
+## Hoppscotch Self-Hosted Edition for Enterprise
+
+<Warning>
+  To enable desktop app support for your self-hosted Hoppscotch instance, make sure to update the `WHITELISTED_ORIGINS` environment variable in your `.env` file with your deployment URL.
+</Warning>
+<Note>
+  e.g. to allow connection to `https://hoppscotch.my-domain.com` you need to add `app://hoppscotch_my_domain_com` and `http://app.hoppscotch_my_domain_com` to the `WHITELISTED_ORIGINS` environment variable.
+  ```bash
+  WHITELISTED_ORIGINS=...existing_origins,app://hoppscotch_my_domain_com,http://app.hoppscotch_my_domain_com
+  ```
+  <Tip>
+    _app://hoppscotch_my_domain_com_ &nbsp; for Linux and macOS machines.
+  </Tip>
+  <Tip>
+    _http://app.hoppscotch_my_domain_com_ &nbsp; for Windows machine.
+  </Tip>
+</Note>
+
+Add your self-hosted Hoppscotch Enterprise Edition instance to Hoppscotch Desktop App:
+
+1. Open Hoppscotch Desktop App.
+2. Click the Hoppscotch logo in the top-left corner.
+3. Click "**Add an instance**".
+4. Enter the URL of your self-hosted Hoppscotch instance.
+5. Click "**Connect**".
+
+<Tip>You can also self-host Hoppscotch Desktop App. Follow the instructions in the [Hoppscotch GitHub repository](https://github.com/hoppscotch/hoppscotch/tree/main/packages/hoppscotch-desktop).</Tip>
